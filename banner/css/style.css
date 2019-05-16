@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "umnik-bold";
+  src: url("../fonts/umnik-bold.ttf");
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../fonts/ProximaNova-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova-regular.ttf");
+}
+
+@font-face {
+  font-family: "proximanova-semibold";
+  src: url("../fonts/proximanova-semibold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.banner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner {
+  position: relative;
+  width: 566px;
+  height: 294px;
+}
+
+.banner-button {
+  position: absolute;
+  width: 142px;
+  height: 43px;
+  -webkit-box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+          box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+  background-color: #ff0072;
+  bottom: 22px;
+  right: 33px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner-button:hover {
+  background-color: #b30150;
+  cursor: pointer;
+}
+
+.banner-button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.banner1 {
+  position: relative;
+  background: #ffe32f;
+}
+
+.banner1 img {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.banner1 img:hover {
+  -webkit-transform: rotate(-3deg) scale(1.05);
+          transform: rotate(-3deg) scale(1.05);
+}
+
+.banner1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.banner1-container-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner1-container-content__h2 {
+  margin-top: 7px;
+  color: #000000;
+  font-family: "ProximaNova-Bold";
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.banner1-container-content__timer p {
+  color: #000000;
+  font-family: "proximanova-semibold";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.banner1-container-content__timer .clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.banner1-container-content__timer .clock .timer-text {
+  display: inline-block;
+  margin-top: 4px;
+  color: #000000;
+  font-family: "proximanova-semibold";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.banner1-container-content__timer .clock-box {
+  position: relative;
+  width: 80px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.banner1-container-content__timer .clock-box::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  width: 0;
+  height: 51px;
+  border: 2px dashed #fbb100;
+}
+
+.banner1-container-content__timer .clock-box span {
+  margin-left: 5px;
+  color: #000000;
+  font-family: Umnik;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.prices {
+  margin-top: 10px;
+}
+
+.prices__price-new {
+  display: inline-block;
+  height: 35px;
+  color: #ff0072;
+  font-family: "ProximaNova-Bold";
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.prices__price-old {
+  position: relative;
+  color: #000000;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.prices__price-old::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #e3000b;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  left: -10%;
+  top: 13px;
+}
+
+.banner2 {
+  display: block;
+  background: url(../img/banner_2.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .banner-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container h1 {
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    width: 100%;
+    height: 100%;
+  }
+  .banner1-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner2 {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .prices {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .banner-button {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .prices {
+    text-align: center;
+  }
+  .banner2 {
+    height: 170px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

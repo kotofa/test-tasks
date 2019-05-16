@@ -1,0 +1,192 @@
+@import "../sass/_fonts"
+
+*
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+.container
+    width: 1170px
+    margin: 0 auto
+    & h1
+        font-family: "Proxima Nova"
+        font-size: 40px
+        font-weight: 400
+        margin-top: 35px
+        margin-bottom: 25px
+
+.banner-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+//// flex-обертка для баннеров
+
+
+.banner
+    position: relative
+    width: 566px
+    height: 294px
+    &-button
+        position: absolute
+        width: 142px
+        height: 43px
+        box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44)
+        background-color: #ff0072
+        bottom: 22px
+        right: 33px
+        color: #ffffff
+        font-family: "Proxima Nova"
+        font-size: 18px
+        font-weight: 700
+        line-height: 43px
+        text-align: center
+        text-transform: uppercase
+        &:hover
+            background-color: #b30150
+            cursor: pointer
+        &:active
+            box-shadow: none
+//// общие стили для кнопки "подробнее"        
+
+
+.banner1
+    position: relative
+    background: #ffe32f
+    & img
+        margin-left: 15px
+        margin-bottom: 15px
+        transition: 1s
+        &:hover
+            transform: rotate(-3deg) scale(1.05) ////кликабельная картинка
+    &-container
+        display: flex
+        flex-direction: row
+        height: 100%
+        width: 100%
+        &-content
+            display: flex
+            flex-direction: column
+            &__h2
+                margin-top: 7px
+                color: #000000
+                font-family: "ProximaNova-Bold"
+                font-size: 31px
+                font-weight: 700
+                line-height: 40px
+            &__timer
+                & p
+                    color: #000000
+                    font-family: "proximanova-semibold"
+                    font-size: 16px
+                    font-weight: 400
+                    margin-bottom: 14px
+                & .clock
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    text-align: center
+                    & .timer-text
+                        display: inline-block
+                        margin-top: 4px
+                        color: #000000
+                        font-family: "proximanova-semibold"
+                        font-size: 16px
+                        font-weight: 400
+                & .clock-box
+                    position: relative
+                    width: 80px
+                    height: 55px
+                    border-radius: 5px
+                    background-color: #ffffff //// квадраты для часов
+                    &::before
+                        content: ""
+                        position: absolute
+                        right: 50%
+                        width: 0
+                        height: 51px
+                        border: 2px dashed #fbb100 /// черта в центре
+                    & span
+                        margin-left: 5px
+                        color: #000000
+                        font-family: Umnik
+                        font-size: 55px
+                        font-weight: 700
+                        letter-spacing: 10px
+.prices
+    margin-top: 10px
+    &__price-new
+        display: inline-block
+        height: 35px
+        color: #ff0072
+        font-family: "ProximaNova-Bold"
+        font-size: 32px
+        font-weight: 700
+    &__price-old
+        position: relative
+        color: #000000
+        font-family: "Proxima Nova"
+        font-size: 16px
+        font-weight: 400
+        &::before
+            content: "";
+            position: absolute;
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #e3000b;
+            transform: rotate(10deg);
+            left: -10%;
+            top: 13px;        
+//// первый баннер
+
+.banner2
+    display: block
+    background: url(../img/banner_2.jpg)
+    background-size: cover
+   
+
+//// второй баннер
+
+
+///// медиа запросы
+@media (max-width: 1200px )
+    .container
+        width: 100%
+        & h1
+            text-align: center
+    .banner-wrapper
+        flex-direction: column
+        align-items: center
+    .banner
+        margin-bottom: 20px
+
+@media (max-width: 767px)
+    .container
+        & h1
+            line-height: 35px
+
+@media (max-width: 600px)
+    .banner
+        width: 100%
+        height: 100%
+    .banner1-container
+        flex-direction: column
+        align-items: center
+    .banner2
+        height: 300px
+        display: flex
+        flex-direction: column-reverse
+    .prices
+        margin-bottom: 20px
+        text-align: center
+    .banner-button
+        position: static
+        width: 100%
+
+@media (min-width: 320px) and (max-width: 480px)
+    .prices
+        text-align: center
+    .banner2
+        height: 170px
+
