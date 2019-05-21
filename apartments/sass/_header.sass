@@ -1,0 +1,64 @@
+header
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    padding: 0 50px
+    align-items: center
+    width: 100%
+    height: 125px
+    background-color: #002f2f
+
+nav
+    height: 100%
+    width: 80%
+.nav-menu
+    display: flex
+    flex: 1
+    flex-direction: row
+    justify-content: space-around
+    padding: 0 40px
+    text-decoration: none
+    list-style: none
+    color: #fefefe
+    height: 100%
+    width: 100%
+    & li
+        display: flex
+        height: 100%
+        & a
+            line-height: 125px
+            height: 100%
+            color: #fefefe
+            font-size: 24px
+            font-weight: 400
+            transition: 0.7s
+            &:hover
+                background: #034a4a
+            &:active
+                border: 1px solid #fefefe
+            @media (max-width: 1600px )
+                font-size: 18px
+.menu-icon
+    display: none
+    color: #fefefe
+.contact
+    display: flex
+    flex-direction: column
+    color: #fefefe
+    font-size: 20px
+    font-weight: 400
+    flex-basis: content
+    @media (max-width: 1600px )
+        font-size: 14px
+        
+    a
+        color: #fefefe
+        font-size: 32px
+        font-weight: 400
+        margin-bottom: 5px
+        @media (max-width: 1600px )
+            font-size: 24px
+
+
+@media (max-width: 1600px )
+    margin-right: 30px

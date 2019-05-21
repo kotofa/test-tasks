@@ -1,0 +1,187 @@
+.content
+    background-color: #ffffff
+    &__filter
+        display: flex
+        flex-direction: row
+        width: 100%
+        color: #002f2f
+        font-size: 14px
+        font-weight: 400
+        opacity: 0.7
+        padding-top: 30px
+        padding-bottom: 40px
+        & :not(:last-child)
+            margin-right: 10px
+.content__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 100px
+
+.filter__item
+    display: flex
+    flex-direction: row
+    opacity: 0.7
+    &:hover
+        cursor: pointer
+        opacity: 1
+        & span
+            text-decoration: underline
+            text-decoration-style: dotted
+    &:active
+        color: red
+
+.arrow
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #f4f8f8
+    border-radius: 50%  
+    width: 18px
+    height: 18px
+    font-size: 7px
+.content__cards-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    width: 100%
+.card
+    display: flex
+    flex-direction: column
+    width: 320px
+    height: 522px
+    border-radius: 3px
+    margin-bottom: 50px
+    &--available
+        border: 1px solid #002f2f
+        & .card__info-panel
+            background-color: #002f2f
+    &--reserve
+        border: 1px solid #a7a37e
+        & .card__info-panel
+            background-color: #a7a37e
+    &--sold
+        border: 1px solid #a1a1a1
+        & .card__info-panel
+            background-color: #a1a1a1
+    &__head
+        display: flex
+        flex-direction: row
+        margin-top: 18px
+        margin-bottom: 20px
+        justify-content: flex-start
+        color: #ffffff
+        font-size: 12px
+        font-weight: 400
+        &-item
+            display: none
+        &-item--red
+            display: flex
+            align-items: center
+            padding: 0 4px
+            border-radius: 3px
+            background-color: #ff4444
+        & *
+            margin-left: 20px
+.shock
+    display: none
+
+.card__star
+    margin-left: auto
+    margin-right: 17px
+    font-size: 17px
+    color: #d6d6d6
+    &:hover
+        color: #000
+        cursor: pointer
+.fas
+    &.fa-star
+        color: #a7a37e
+    
+.card__img
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    width: 220px
+    height: 220px
+    img
+        max-width: 100%
+        max-height: 100%
+.card__info
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: auto
+    margin-bottom: 25px
+    &-name
+        text-align: center
+        color: #002f2f
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 60px
+    &-specification
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        height: 35px
+        width: 210px
+        border-left: 2px solid #046380
+        padding: 0 5px
+        & .facing
+            color: #046380
+            font-size: 16px
+            font-weight: 400
+            margin-right: 25px
+        & .area
+            color: #313639
+            font-size: 13px
+            font-weight: 400
+            margin-right: 15px
+            & span
+                font-size: 18px
+        & .floor
+            color: #313639
+            font-size: 13px
+            font-weight: 400
+            & span
+                font-size: 18px
+    &-price
+        color: #313639
+        font-size: 24px
+        font-weight: 600
+        margin-top: 30px
+        
+
+
+.card__info-panel
+    text-align: center
+    line-height: 36px
+    height: 36px
+    border-radius: 0 0 3px 3px
+    color: #ffffff
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.72px
+
+.content__button
+    width: 530px
+    height: 70px
+    border-radius: 3px
+    background-color: #046380
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    line-height: 70px
+    text-transform: uppercase
+    letter-spacing: 1.12px
+    text-align: center
+    margin-bottom: 75px
+    transition: 0.6s
+    &:hover
+        box-shadow: inset 3px 3px 177px 140px rgba(0,0,0,0.54)
+        cursor: pointer
+.content__button--none
+    display: none

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apartments</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <img src="img/Vector_Smart_Object.png" alt="" class="header-icon" />
+        <nav>
+            <i class="fas fa-bars menu-icon"></i>
+            <ul class="nav-menu" id="my-top-menu">
+                <li class="nav-menu__item"><a href="#">Объекты</a></li>
+                <li class="nav-menu__item"><a href="#">Компания</a></li>
+                <li class="nav-menu__item"><a href="#">Как купить</a></li>
+                <li class="nav-menu__item"><a href="#">Агентам</a></li>
+                <li class="nav-menu__item"><a href="#">Регионам</a></li>
+                <li class="nav-menu__item"><a href="#">Акции</a></li>
+                <li class="nav-menu__item"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a href="tel:+8 888 88 88 98">8 888 88 88 98</a>
+            <span>Звони скорее!</span>
+        </div>
+    </header>
+    <div id="totop"><i class="fas fa-chevron-up"></i></div>
+    <div class="container">
+        <h1>Найдено <span id="numbOfAprtm">666</span> квартир</h1>
+        <div class="content">
+            <div class="content__wrapper">
+                <div class="content__filter">
+                    <span>Сортировать по:</span>
+                    <div class="filter__price filter__item">
+                        <span>Цене</span>
+                        <i class="fas fa-chevron-down arrow arrow__price"></i>
+                    </div>
+                    <div class="fitler__rooms filter__item">
+                        <span>Комнатам</span>
+                        <i class="fas fa-chevron-up arrow arrow__rooms"></i>
+                    </div>
+                </div>
+                <!-- /.content__filter -->
+                <div class="content__cards-wrapper">
+
+
+                </div>
+                <div class="content__button">
+                    Показать еще 20
+                </div>
+            </div>
+        </div>
+        <!-- /.content -->
+        <footer>
+            <div class="footer__txt">
+                <h2>Успей купить!</h2>
+                <span>Подпишись и успей словить все акции</span>
+            </div>
+            <div class="footer__input-form">
+                <div class="input__box">
+                    <input type="email" id="email" class="input-email" placeholder="E-mail">
+                    <div class="chekbox__wrapper">
+                        <input type="checkbox" id="email-chk" checked>
+                        <label for="email-chk" class="email-chk">подписаться на новости</label>
+                    </div>
+                </div>
+                <button class="input__btn">
+                    ПОДПИСАТЬСЯ
+                </button>
+            </div>
+        </footer>
+        <template id="extDiv">
+            <div class="content__card card">
+                <div class="card__head">
+                    <div class="discount card__head-item--red">-17%</div>
+                    <div class="shock card__head-item--red" id="shock-price">ШОК ЦЕНА!</div>
+                    <i class="far fa-star star-off card__star"></i>
+                </div>
+                <!-- /.card__head -->
+                <div class="card__img">
+                    <img src="img/blueprints/1.png" alt="планировка квартиры">
+                </div>
+                <!-- /.card__img -->
+                <div class="card__info">
+                    <div class="card__info-name">Студия №44</div>
+                    <div class="card__info-specification">
+                        <div class="facing">без отделки</div>
+                        <div class="area"><span><span id="area">28</span> м<sup>2</sup></span><br>площадь</div>
+                        <div class="floor"><span id="floor">12/14</span><br>этаж</div>
+                    </div>
+                    <div class="card__info-price"><span>1 666 666 руб.</div>
+                </div>
+                <!-- /.card__info -->
+                <div class="card__info-panel">
+                    Свободно
+                </div>
+                <!-- /.card__info-panel -->
+            </div>
+        </template>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
